@@ -3,17 +3,20 @@
 <template>
   <MyComponent />
   <CounterVue name="Яблоки" :min=1 :max=10 />
+  <TodoList />
 </template>
 
 <script>
-import MyComponent from './components/MyComponent.vue';
-import CounterVue from './components/Counter.vue';
+import MyComponent from './components/MyComponent.vue'
+import CounterVue from './components/Counter.vue'
+import TodoList from './components/TodoList.vue';
 
 export default {
   name: 'App',
   components: {
     MyComponent,
     CounterVue,
+    TodoList,
   }
 }
 </script>
